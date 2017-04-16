@@ -1,2 +1,4 @@
 print("Hello Cat!!")
 print("Cat!!")
+print("Hello Cat!!")
+print("Hello Cat!!")
