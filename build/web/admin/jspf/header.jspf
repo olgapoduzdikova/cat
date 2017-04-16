@@ -1,0 +1,42 @@
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+
+<%@page pageEncoding="cp1251" contentType="text/html; charset=cp1251"%>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../css/olgastore.css">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+
+        <script src="../js/jquery-1.4.2.js" type="text/javascript"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('tr.tableRow').hover(
+                    function () {
+                        $(this).addClass('selectedRow');
+                    },
+                    function () {
+                        $(this).removeClass('selectedRow');
+                    }
+                );
+             });
+        </script>
+
+        <title>OlgaStore :: Вход администратора</title>
+    </head>
+
+    <body>
+        <div id="main">
+            <div id="header">
+                <div id="widgetBar"></div>
+
+                <a href="<c:url value='../index.jsp'/>">
+                    <img src="../img/logo.png" alt="OlgaStore logo" id="adminLogo">
+                </a>
+
+                <img src="../img/logoText.png" id="logoText" alt="olgastore bean">
+            </div>
+
+            <h2>Администратор</h2>
